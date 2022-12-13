@@ -11,48 +11,55 @@
 
 </head>
 <body>
-    <div class="container text-center">
-        <!-- HEADER -->
-        <div class="row bg-primary">
-          <div class="col">
-            header 
-          </div>
-        </div>
 
-        
-        <div class="row justify-content-left  ">
-            <!-- SIDE BAR -->
-          <div class="col-2 col-md-1 col-sm-1 bg-secondary">
-            side bar 
-          </div>
-          
-          <!-- MAIN -->
-          <div class="col-10 col-md-11 col-sm-11 bg-success">
+    <!-- HEADER -->
+    <header class="bg-secondary">
+        <div class="container-fluid text-center">
             <div class="row">
-                <div class="col-10">
-                    main-top
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-                        <div>
-                            main-left1
-                        </div>
-                        <div>
-                            main-left2
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div>
-                            main-right1
-                        </div>
-                        <div>
-                            main-right2
-                        </div>
-                    </div>
-                </div>
+                <div class="col-auto bg-danger">left</div>
+                <div class="col bg-danger">center</div>
+                <div class="col-auto bg-danger">right</div>
             </div>
-          </div>
         </div>
-    </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="bg-dark">
+        <aside class="d-flex flex-column justify-content-between bg-info">
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+
+        </aside>
+
+        <section id="main-header" class="bg-primary">
+            <header  class="bg-warning">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12  col-lg-6 col-sm-4 bg-danger">left</div>
+                        <div class="col-12 col-lg-3 col-sm-4 bg-danger">center</div>
+                        <div class="col-12 order-first col-lg-3 col-sm-4 order-sm-3 bg-danger">right</div>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- MAIN -->
+            <section class="bg-secondary">
+                <container class="fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 ">
+                            <div class="box">left top</div>
+                            <div class="box">left bottom</div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="box">right top</div>
+                            <div class="box">right bottom</div>
+                        </div>
+                    </div>
+                </container>
+            </section>
+
+        </section>
+    </main>
 </body>
 </html>
