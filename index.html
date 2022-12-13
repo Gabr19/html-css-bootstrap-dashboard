@@ -13,48 +13,285 @@
 <body>
 
     <!-- HEADER -->
-    <header class="bg-secondary">
+    <header class="p-3">
         <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-auto bg-danger">left</div>
-                <div class="col bg-danger">center</div>
-                <div class="col-auto bg-danger">right</div>
+            <div class="row d-flex align-items-center my_header_row">
+                <div class="col-auto ">
+                    <img src="img/img/logo.svg" alt="">
+                </div>
+                <div class="col ">
+                    <form class="" role="search">
+                        <input class="form-control" type="search" placeholder="Prova a cercare lezioni di laravel" aria-label="Search">
+                    </form>  
+                </div>       
+                <div class="d-flex align-items-center justify-content-center col-auto ">
+                    <div>
+                        <ul class="list_header">
+                            <li>
+                                <i class="mx-2 fa-solid fa-list"></i>
+                            </li>
+                            <li>
+                                <i class="mx-2 fa-regular fa-question"></i>
+                            </li>
+                            <li>
+                                <i class="mx-2 fa-solid fa-ellipsis-vertical"></i>
+                            </li>
+                            <li>
+                                <i class="mx-2 fa-solid fa-bell"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- MAIN -->
     <main class="bg-dark">
-        <aside class="d-flex flex-column justify-content-between bg-info">
-            <div class="top">top</div>
-            <div class="bottom">bottom</div>
+        <aside class="d-flex flex-column justify-content-between">
+            <div class="top">
+                <ul id="list_aside">
+                    <li><i class=" fa-solid fa-house"></i> Home</li>
+                    <li><i class="me-2 fa-solid fa-square-poll-vertical"></i>Stats</li>
+                    <li><i class="me-2 fa-solid fa-square-poll-vertical"></i>Signals</li>
+                </ul>
+            </div>
+
+            <div >
+                <ul id="list_aside">
+                    <li>
+                        <i class="me-2 fa-solid fa-gear"></i>Admin
+                    </li>
+                </ul>
+            </div>
 
         </aside>
 
-        <section id="main-header" class="bg-primary">
-            <header  class="bg-warning">
+        <section id="main-header" class="">
+            <header  class="">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12  col-lg-6 col-sm-4 bg-danger">left</div>
-                        <div class="col-12 col-lg-3 col-sm-4 bg-danger">center</div>
-                        <div class="col-12 order-first col-lg-3 col-sm-4 order-sm-3 bg-danger">right</div>
+                    <div class="row text-white">
+                        <div class="col-12 col-lg-6 col-sm-4 bg-primary">
+                            <div class="row_main_header">
+                                <div class="fs-2">Boolean</div> 
+                                <div class="etichette">Piano blaze</div>
+                            </div>
+                            <div class="row_main_header">
+                                <div class="etichette">3 app</div>
+                                <div class="ms-3"><i class="fa-solid fa-angles-right"></i></div>
+                                <div class="etichette">Boolean Mobile App</div>
+                                <div class="etichette">Boolean web App</div>
+                                <div class="etichette">Boolean blog App</div>
+                            </div> 
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-sm-4 bg-primary">
+                            <div class="row_main_header">
+                                <div class="fs-6">Studenti online negli ultimi 30 minuti.</div> 
+                            </div>
+                            <div class="row_main_header">
+                                <div class="fs-2">125</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 order-first col-lg-3 col-sm-4 order-sm-3 bg-primary">
+                            <div class="row_main_header">
+                                <div class="fs-6">Nuovo Studente</div> 
+                                <i class=" ms-3 fs-3 fa-solid fa-square-plus"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </header>
 
             <!-- MAIN -->
-            <section class="bg-secondary">
+            <section class="main_main">
                 <container class="fluid">
                     <div class="row">
                         <div class="col-12 col-lg-8 ">
-                            <div class="box">left top</div>
-                            <div class="box">left bottom</div>
+                            <div class="box">
+                                <div class="titolo_pannelli fs-3 border rounded-top">
+                                    Prossime classi
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Data Inizio</th>
+                                            <th scope="col">Roi</th>
+                                            <th scope="col">Stato</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="titolo_pannelli fs-3 border rounded-top">
+                                    F.A.Q.
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
                         </div>
+
+
+
                         <div class="col-12 col-lg-4">
-                            <div class="box">right top</div>
-                            <div class="box">right bottom</div>
+                            <div class="box">
+                                <div class="titolo_pannelli fs-3 border rounded-top ">
+                                    Todo
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+
+
+                            <div class="box_right_bottom">
+                                <div>
+                                    <img src="img/img/stats.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </container>
             </section>

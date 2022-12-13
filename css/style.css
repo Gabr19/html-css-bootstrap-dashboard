@@ -8,7 +8,15 @@
 /* HEADER */
 header{
     width: 100%;
-    height: 100px;
+    background-color: white;
+}
+
+
+
+.list_header{
+    list-style: none;
+    display: flex;
+    
 }
 
 main{
@@ -20,12 +28,59 @@ main{
 main > aside{
     width: 200px;
     height: 100%;
+    background-color: rgba(5,30,52,255);
 }
+
+#list_aside{
+    list-style: none;
+    padding: 20px 20px;
+    color: white;
+}
+
+#list_aside > *{
+    padding: 10px ;
+}
+
+
 
 #main-header {
     width: calc(100% - 200px);
     height: 100%;
     overflow: auto;
+}
+
+.row_main_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.etichette{
+    background-color: #165bba;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: auto;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+
+}
+
+
+.main_main{
+    background-color: rgba(247,247,247,255);
+}
+
+.titolo_pannelli{
+    background-color: rgba(240,240,240,255);
+    margin-top: 10px;
+}
+
+.box_right_bottom >div>img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 
